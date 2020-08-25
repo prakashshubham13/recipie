@@ -25,7 +25,7 @@ section{
 section img{
     position: absolute;
     top: 50px;
-    left: 10px;
+    left: 50px;
   
     object-fit: cover;
 }
@@ -50,15 +50,16 @@ section h1{
       7px -1px 0 rgb(255, 96, 23),
       -8px 1px 0 rgb(255, 127, 8),
        1px 10px 0 #000;
+       top:50%;
 }
 .drop{
     animation-name: example;
   animation-duration: 2s;
 }
 @keyframes example {
-  0%   { left:10px; top:-390px;}
+  0%   { left:50px; top:-390px;}
 
-  100% { left:10px; top:50px;}
+  100% { left:50px; top:50px;}
 }
 
 .up{
@@ -71,23 +72,43 @@ section h1{
   100% { left:900px;bottom:0%;}
 }
 
-body::-webkit-scrollbar {
-  width: 1em;
+::-webkit-scrollbar {
+    width: 12px;
 }
  
-body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(255, 201, 119, 0.3);
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 115, 0, 0.3); 
+    border-radius: 0px; background-color: rgb(36, 34, 32);
 }
  
-body::-webkit-scrollbar-thumb {
-  background-color: orange;
-  outline: none;
- box-shadow: 70px -60px orange;
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: orange;
+    -webkit-box-shadow: inset 0 3px 6px rgb(255, 255, 255); 
 }
 section:nth-child(2)
 {
         background:whitesmoke;
         height: 100vh;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    section h1{
+        font-size: 4.4em;
+
+        -webkit-text-stroke: 5px black;
+    text-shadow:none;
+    background-color: white;
+    }
+    section img{
+    position: absolute;
+    top: 50px;
+left:50px;
+    }
+
 }
     </style>
 </head>
@@ -97,7 +118,7 @@ section:nth-child(2)
         
         <img src="11.png" data-speed="-5" class="layer drop" alt="">
          <img src="chef.png" data-speed="7" class="layer up" alt="" style="left:900px;bottom:0%;">
-        <h1 class="layer" data-speed="2" style="top:50%;">  RECIPIESs</h1>
+        <h1 class="layer" data-speed="2" style="">  RECIPIESs</h1>
     </section>
 
     <section></section>
