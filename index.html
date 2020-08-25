@@ -71,11 +71,22 @@ section h1{
   100% { left:900px;bottom:0%;}
 }
 
-
-
+body::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(255, 201, 119, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: orange;
+  outline: none;
+ box-shadow: 70px -60px orange;
+}
 section:nth-child(2)
 {
-        background: white;
+        background:whitesmoke;
         height: 100vh;
 }
     </style>
@@ -86,15 +97,6 @@ section:nth-child(2)
         
         <img src="11.png" data-speed="-5" class="layer drop" alt="">
          <img src="chef.png" data-speed="7" class="layer up" alt="" style="left:900px;bottom:0%;">
-
-         <!-- <img src="5.png" data-speed="5" class="layer" alt="">
-         <img src="6.png" data-speed="2" class="layer" alt="">
-         <img src="7.png" data-speed="-1" class="layer" alt="">
-          <img src="8.png" data-speed="-3" class="layer" alt="">
-          <img src="11.png" data-speed="2" class="layer" alt="">
-          <img src="2.png" data-speed="-3" class="layer" alt="">
-        <img src="10.png" data-speed="-1" class="layer" alt="">
-         <img src="12.png" data-speed="3" class="layer" alt=""> -->
         <h1 class="layer" data-speed="2" style="top:50%;">  RECIPIESs</h1>
     </section>
 
